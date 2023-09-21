@@ -120,6 +120,7 @@ document.getElementsByTagName('input')[0].addEventListener("change", nombreJugad
         partida1.classList.remove("fondoRojo");
     }else{
         partida1.classList.add("fondoRojo"); 
+        segunda=0;
     }
 }
 
