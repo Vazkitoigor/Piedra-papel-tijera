@@ -108,15 +108,14 @@ document.getElementsByTagName('input')[0].addEventListener("change", nombreJugad
 // input[1] de modo que pueda asignarle un fondo rojo al input si el numero de partidas es incorrecto 
 // si el numero de partidas es correcto no se mostrara nada.
 
-
+segunda=0;
  document.getElementsByTagName('input')[1].addEventListener("change", juegos);
  function juegos(){
-
     partida1=document.getElementsByTagName('input')[1];
     partidas=document.getElementsByTagName('input')[1].value;
     if(partidas>0){
         segunda=1;
-        
+        console.log("hola");
         partida1.classList.remove("fondoRojo");
     }else{
         partida1.classList.add("fondoRojo"); 
@@ -141,6 +140,7 @@ function filtro(){
             desabilitar1.disabled=true;
 
         }
+
  }
 
 
